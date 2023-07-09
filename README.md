@@ -8,5 +8,6 @@ CircleMenuView의 buttonImages는 String 배열입니다.  systemImage에 들어
 EX: 
 CircleMenuView(isCircleView: $isCircleView,  buttonImages: ["heart", "star", "square", "triangle", "circle", "rectangle", "pencil", "paperplane"])
 
-https://github.com/Byeonjinha/Naver-Tabbar-Clone/assets/87685946/7373ac0d-10ba-4169-9996-95597352559c
+
+https://github.com/Byeonjinha/Naver-Tabbar-Clone/assets/87685946/43054b2d-2293-4bcc-a1a9-238d6587d5cc
 
