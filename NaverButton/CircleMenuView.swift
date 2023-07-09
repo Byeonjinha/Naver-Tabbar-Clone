@@ -34,79 +34,97 @@ struct CircleMenuView: View {
     
     var body: some View {
         NavigationStack {
-            GeometryReader { geometry in
-                let w = geometry.size.width
-                let h = geometry.size.height
-                ZStack {
-                    Circle()
-                        .fill(Color.black)
-                        .frame(width: w * backCicleSize, height: h * backCicleSize)
-                    Circle()
-                        .fill(Color.blue)
-                        .frame(width: w * 0.3 * backCicleSize, height: h * 0.3 * backCicleSize)
+            VStack{
+                Spacer()
+                    .frame(height: UIScreen.main.bounds.height * 0.3)
+                HStack {
+                    Image(systemName: "arrow.left")
+                        .padding()
                         .onTapGesture {
-                            if isDisappear {
-                                isDisappear = false
-                                timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-                                    if moveCount < 2 {
-                                        withAnimation(Animation.linear(duration: 0.1)) {
-                                            rotationAngle = (rotationAngle - .pi / Double(buttonImages.count)).truncatingRemainder(dividingBy: 2 * .pi)
-                                            moveCount += 1
-                                            radius -= 40
-                                            backCicleSize -= 0.15
+                            moveLeft()
+                        }
+                    Spacer()
+                    Image(systemName: "arrow.right")
+                        .padding()
+                        .onTapGesture {
+                            moveRight()
+                        }
+                }
+               
+                GeometryReader { geometry in
+                    let w = geometry.size.width
+                    let h = geometry.size.height
+                    ZStack {
+                        Circle()
+                            .fill(Color.black)
+                            .frame(width: w * backCicleSize, height: h * backCicleSize)
+                        Circle()
+                            .fill(Color.blue)
+                            .frame(width: w * 0.3 * backCicleSize, height: h * 0.3 * backCicleSize)
+                            .onTapGesture {
+                                if isDisappear {
+                                    isDisappear = false
+                                    timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                                        if moveCount < 2 {
+                                            withAnimation(Animation.linear(duration: 0.1)) {
+                                                rotationAngle = (rotationAngle - .pi / Double(buttonImages.count)).truncatingRemainder(dividingBy: 2 * .pi)
+                                                moveCount += 1
+                                                radius -= 40
+                                                backCicleSize -= 0.15
+                                            }
+                                        } else if moveCount == 2{
+                                            withAnimation(Animation.linear(duration: 0.1)) {
+                                                rotationAngle = (rotationAngle + .pi / Double(buttonImages.count) * 0.2).truncatingRemainder(dividingBy: 2 * .pi)
+                                                moveCount += 1
+                                                backCicleSize += 0.1
+                                            }
+                                            moveCount = 0
+                                            stopTimer()
+                                            isCircleView = false
                                         }
-                                    } else if moveCount == 2{
-                                        withAnimation(Animation.linear(duration: 0.1)) {
-                                            rotationAngle = (rotationAngle + .pi / Double(buttonImages.count) * 0.2).truncatingRemainder(dividingBy: 2 * .pi)
-                                            moveCount += 1
-                                            backCicleSize += 0.1
-                                        }
-                                        moveCount = 0
-                                        stopTimer()
-                                        isCircleView = false
                                     }
                                 }
                             }
-                        }
-                    
-                    ForEach(0..<buttonImages.count) { index in
-                        Circle()
-                            .fill(Color.red)
-                            .frame(width: 50, height: 50)
-                            .overlay(
-                                VStack{
+                        
+                        ForEach(0..<buttonImages.count) { index in
+                            Circle()
+                                .fill(Color.red)
+                                .frame(width: 50, height: 50)
+                                .overlay(
+                                    VStack{
+                                        Image(systemName: buttonImages[index])
+                                    }
+                                )
+                                .position(
+                                    x: geometry.size.width * 0.5 + CGFloat(cos(angle(index: index) + rotationAngle)) * (radius),
+                                    y: geometry.size.height * 0.5 + CGFloat(sin(angle(index: index) + rotationAngle)) * (radius)
+                                )
+                                .navigationDestination(isPresented: $isButtons[index]) {
                                     Image(systemName: buttonImages[index])
+                                    
                                 }
-                            )
-                            .position(
-                                x: geometry.size.width * 0.5 + CGFloat(cos(angle(index: index) + rotationAngle)) * (radius),
-                                y: geometry.size.height * 0.5 + CGFloat(sin(angle(index: index) + rotationAngle)) * (radius)
-                            )
-                            .navigationDestination(isPresented: $isButtons[index]) {
-                                Image(systemName: buttonImages[index])
-                           
-                            }
-                            .onTapGesture {
-                                isButtons[index] = true
-                                isFirst = false
-                            }
-                            .gesture(DragGesture()
-                                .onChanged { value in
-                                    let redPointAngle = angle(index: index)
-                                    let dragAngle = atan2(Double(value.location.y - geometry.size.height * 0.5), Double(value.location.x - geometry.size.width * 0.5))
-                                    rotationAngle = dragAngle - redPointAngle
+                                .onTapGesture {
+                                    isButtons[index] = true
+                                    isFirst = false
                                 }
-                                .onEnded { value in
-                                    endEvent(location: value.location, index: index, w: w, h: h)
-                                }
-                            )
+                                .gesture(DragGesture()
+                                    .onChanged { value in
+                                        let redPointAngle = angle(index: index)
+                                        let dragAngle = atan2(Double(value.location.y - geometry.size.height * 0.5), Double(value.location.x - geometry.size.width * 0.5))
+                                        rotationAngle = dragAngle - redPointAngle
+                                    }
+                                    .onEnded { value in
+                                        endEvent(location: value.location, index: index, w: w, h: h)
+                                    }
+                                )
+                        }
                     }
-                }
-                .onAppear {
-                    if isFirst {
-                        appearEvent()
-                    } else {
-                        isCircleView = false
+                    .onAppear {
+                        if isFirst {
+                            appearEvent()
+                        } else {
+                            isCircleView = false
+                        }
                     }
                 }
             }
@@ -172,5 +190,18 @@ struct CircleMenuView: View {
             }
         }
         rotationAngle = anglesArray[idx] - redPointAngle
+    }
+    
+    //MARK: moveEvent
+    private func moveLeft() {
+        withAnimation(Animation.linear(duration: 0.1)) {
+            rotationAngle = (rotationAngle - .pi / Double(buttonImages.count)).truncatingRemainder(dividingBy: 2 * .pi)
+        }
+    }
+    
+    private func moveRight() {
+        withAnimation(Animation.linear(duration: 0.1)) {
+            rotationAngle = (rotationAngle + .pi / Double(buttonImages.count)).truncatingRemainder(dividingBy: 2 * .pi)
+        }
     }
 }
