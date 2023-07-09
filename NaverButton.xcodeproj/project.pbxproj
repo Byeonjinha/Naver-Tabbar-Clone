@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BABB64062A59802200520952 /* NaverButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB64052A59802200520952 /* NaverButtonApp.swift */; };
+		BABB64082A59802200520952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB64072A59802200520952 /* ContentView.swift */; };
+		BABB640A2A59802300520952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABB64092A59802300520952 /* Assets.xcassets */; };
+		BABB640D2A59802300520952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABB640C2A59802300520952 /* Preview Assets.xcassets */; };
+		BABB64172A59802300520952 /* NaverButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB64162A59802300520952 /* NaverButtonTests.swift */; };
+		BABB64212A59802300520952 /* NaverButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB64202A59802300520952 /* NaverButtonUITests.swift */; };
+		BABB64232A59802300520952 /* NaverButtonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB64222A59802300520952 /* NaverButtonUITestsLaunchTests.swift */; };
+		BABB64302A5A3C6D00520952 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB642F2A5A3C6D00520952 /* CircleMenuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BABB64132A59802300520952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BABB63FA2A59802200520952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BABB64012A59802200520952;
+			remoteInfo = NaverButton;
+		};
+		BABB641D2A59802300520952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BABB63FA2A59802200520952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BABB64012A59802200520952;
+			remoteInfo = NaverButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BABB64022A59802200520952 /* NaverButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABB64052A59802200520952 /* NaverButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverButtonApp.swift; sourceTree = "<group>"; };
+		BABB64072A59802200520952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BABB64092A59802300520952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BABB640C2A59802300520952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BABB64122A59802300520952 /* NaverButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaverButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABB64162A59802300520952 /* NaverButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverButtonTests.swift; sourceTree = "<group>"; };
+		BABB641C2A59802300520952 /* NaverButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaverButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABB64202A59802300520952 /* NaverButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverButtonUITests.swift; sourceTree = "<group>"; };
+		BABB64222A59802300520952 /* NaverButtonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverButtonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BABB642F2A5A3C6D00520952 /* CircleMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BABB63FF2A59802200520952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB640F2A59802300520952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB64192A59802300520952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BABB63F92A59802200520952 = {
+			isa = PBXGroup;
+			children = (
+				BABB64042A59802200520952 /* NaverButton */,
+				BABB64152A59802300520952 /* NaverButtonTests */,
+				BABB641F2A59802300520952 /* NaverButtonUITests */,
+				BABB64032A59802200520952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BABB64032A59802200520952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BABB64022A59802200520952 /* NaverButton.app */,
+				BABB64122A59802300520952 /* NaverButtonTests.xctest */,
+				BABB641C2A59802300520952 /* NaverButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BABB64042A59802200520952 /* NaverButton */ = {
+			isa = PBXGroup;
+			children = (
+				BABB64052A59802200520952 /* NaverButtonApp.swift */,
+				BABB64072A59802200520952 /* ContentView.swift */,
+				BABB642F2A5A3C6D00520952 /* CircleMenuView.swift */,
+				BABB64092A59802300520952 /* Assets.xcassets */,
+				BABB640B2A59802300520952 /* Preview Content */,
+			);
+			path = NaverButton;
+			sourceTree = "<group>";
+		};
+		BABB640B2A59802300520952 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BABB640C2A59802300520952 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BABB64152A59802300520952 /* NaverButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				BABB64162A59802300520952 /* NaverButtonTests.swift */,
+			);
+			path = NaverButtonTests;
+			sourceTree = "<group>";
+		};
+		BABB641F2A59802300520952 /* NaverButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BABB64202A59802300520952 /* NaverButtonUITests.swift */,
+				BABB64222A59802300520952 /* NaverButtonUITestsLaunchTests.swift */,
+			);
+			path = NaverButtonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BABB64012A59802200520952 /* NaverButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABB64262A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButton" */;
+			buildPhases = (
+				BABB63FE2A59802200520952 /* Sources */,
+				BABB63FF2A59802200520952 /* Frameworks */,
+				BABB64002A59802200520952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NaverButton;
+			productName = NaverButton;
+			productReference = BABB64022A59802200520952 /* NaverButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BABB64112A59802300520952 /* NaverButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABB64292A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButtonTests" */;
+			buildPhases = (
+				BABB640E2A59802300520952 /* Sources */,
+				BABB640F2A59802300520952 /* Frameworks */,
+				BABB64102A59802300520952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BABB64142A59802300520952 /* PBXTargetDependency */,
+			);
+			name = NaverButtonTests;
+			productName = NaverButtonTests;
+			productReference = BABB64122A59802300520952 /* NaverButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BABB641B2A59802300520952 /* NaverButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABB642C2A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButtonUITests" */;
+			buildPhases = (
+				BABB64182A59802300520952 /* Sources */,
+				BABB64192A59802300520952 /* Frameworks */,
+				BABB641A2A59802300520952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BABB641E2A59802300520952 /* PBXTargetDependency */,
+			);
+			name = NaverButtonUITests;
+			productName = NaverButtonUITests;
+			productReference = BABB641C2A59802300520952 /* NaverButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BABB63FA2A59802200520952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BABB64012A59802200520952 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BABB64112A59802300520952 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BABB64012A59802200520952;
+					};
+					BABB641B2A59802300520952 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BABB64012A59802200520952;
+					};
+				};
+			};
+			buildConfigurationList = BABB63FD2A59802200520952 /* Build configuration list for PBXProject "NaverButton" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BABB63F92A59802200520952;
+			productRefGroup = BABB64032A59802200520952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BABB64012A59802200520952 /* NaverButton */,
+				BABB64112A59802300520952 /* NaverButtonTests */,
+				BABB641B2A59802300520952 /* NaverButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BABB64002A59802200520952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB640D2A59802300520952 /* Preview Assets.xcassets in Resources */,
+				BABB640A2A59802300520952 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB64102A59802300520952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB641A2A59802300520952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BABB63FE2A59802200520952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB64082A59802200520952 /* ContentView.swift in Sources */,
+				BABB64302A5A3C6D00520952 /* CircleMenuView.swift in Sources */,
+				BABB64062A59802200520952 /* NaverButtonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB640E2A59802300520952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB64172A59802300520952 /* NaverButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABB64182A59802300520952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB64212A59802300520952 /* NaverButtonUITests.swift in Sources */,
+				BABB64232A59802300520952 /* NaverButtonUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BABB64142A59802300520952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BABB64012A59802200520952 /* NaverButton */;
+			targetProxy = BABB64132A59802300520952 /* PBXContainerItemProxy */;
+		};
+		BABB641E2A59802300520952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BABB64012A59802200520952 /* NaverButton */;
+			targetProxy = BABB641D2A59802300520952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BABB64242A59802300520952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BABB64252A59802300520952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BABB64272A59802300520952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NaverButton/Preview Content\"";
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABB64282A59802300520952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NaverButton/Preview Content\"";
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BABB642A2A59802300520952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaverButton.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NaverButton";
+			};
+			name = Debug;
+		};
+		BABB642B2A59802300520952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaverButton.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NaverButton";
+			};
+			name = Release;
+		};
+		BABB642D2A59802300520952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NaverButton;
+			};
+			name = Debug;
+		};
+		BABB642E2A59802300520952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYAAXRZFXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badger.NaverButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NaverButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BABB63FD2A59802200520952 /* Build configuration list for PBXProject "NaverButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB64242A59802300520952 /* Debug */,
+				BABB64252A59802300520952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABB64262A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB64272A59802300520952 /* Debug */,
+				BABB64282A59802300520952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABB64292A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB642A2A59802300520952 /* Debug */,
+				BABB642B2A59802300520952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABB642C2A59802300520952 /* Build configuration list for PBXNativeTarget "NaverButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB642D2A59802300520952 /* Debug */,
+				BABB642E2A59802300520952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BABB63FA2A59802200520952 /* Project object */;
+}
