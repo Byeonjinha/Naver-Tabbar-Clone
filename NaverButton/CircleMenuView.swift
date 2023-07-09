@@ -155,7 +155,7 @@ struct CircleMenuView: View {
     
     // endEvent
     private func endEvent( location: CGPoint, index: Int, w: CGFloat,h: CGFloat) {
-        let angleStep = 2 * CGFloat.pi / 8
+        let angleStep = 2 * CGFloat.pi / CGFloat(buttonImages.count)
         let angleRange = stride(from: -Double.pi, through: Double.pi, by: angleStep)
         let anglesArray = Array(angleRange)
 

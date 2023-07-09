@@ -3,6 +3,7 @@ import CoreGraphics
 
 struct ContentView: View {
     @State var isCircleView: Bool = false
+    let buttonImages:[String] = ["heart", "star", "square", "triangle", "circle", "rectangle"]
     
     var body: some View {
         
@@ -21,7 +22,7 @@ struct ContentView: View {
                     .padding()
             }
             if isCircleView {
-                CircleMenuView(isCircleView: $isCircleView,  buttonImages: ["heart", "star", "square", "triangle", "circle", "rectangle", "pencil", "paperplane"])
+                CircleMenuView(isCircleView: $isCircleView,  buttonImages: buttonImages)
             }
         }
     }
